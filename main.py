@@ -1,7 +1,7 @@
 from asyncio import run
-from web_socket_client.socketClient import WebSocketClient
-from web_socket_client.utils import custom_handle_message
-from web_socket_client.settings import authenticate
+from src.web_socket_client.socketClient import WebSocketClient
+from src.web_socket_client.utils import custom_handle_message
+from src.web_socket_client.settings import authenticate
 
 async def main():
     jsessionid, ws_key = await authenticate()
